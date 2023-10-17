@@ -2,8 +2,7 @@ body {
   background-color: #e3def6;
   margin: 0px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 
 h1,
@@ -14,14 +13,25 @@ h5,
 h6 {
   margin: 0px;
   font-family: "Nunito", sans-serif;
-  font-weight: 1000;
+  font-weight: 800;
   color: var(--dark_color);
 }
 
 :root {
   --dark_color: #1f1f1f;
-  --grey_color: #807f81;
-  --light-grey_color: #e8e5ea;
+  --light-grey_color: #eaeaea;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header {
@@ -52,7 +62,6 @@ h6 {
 }
 
 .today_title {
-  font-weight: 1000;
   padding-left: 30px;
 }
 
@@ -64,6 +73,10 @@ h6 {
 }
 
 .today_winner {
+  margin-left: 20px;
+}
+
+.cycle_winner {
   margin-left: 20px;
 }
 
@@ -124,4 +137,18 @@ h6 {
 
 .dow-winner {
   margin: 10px 0px;
+}
+
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 540px;
+  margin-top: 80px;
+}
+
+.side-bar_title {
+  height: 40px;
+  margin: 30px 0px;
 }
